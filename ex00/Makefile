@@ -1,4 +1,4 @@
-NAME = Biro
+NAME = Scalar
 
 CC = c++
 

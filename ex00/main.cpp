@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 12:09:43 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 19:10:09 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/17 19:23:42 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int main(int argc, char **argv)
 
 	/* Char */
 	if ((str.find_first_of("0123456789") == std::string::npos) && str.length() == 1)
-		std::cout << "Char: " << str[0] << std::endl;
+		std::cout << "Char: '" << str[0] << "'" << std::endl;
 	else if (isprint(num))
-		std::cout << "Char: " << static_cast<char>(num) << std::endl;
+		std::cout << "Char: '" << static_cast<char>(num) << "'" << std::endl;
 	else if (num == 127 || (num < 32 && num > 0))
 		std::cout << "Char: Non Displayable" << std::endl;
 	else
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 	if (!num && str[0] != '0')
 		std::cout << "Int: " << static_cast<int>(str[0]) << std::endl;
 	else if (num > INT_MAX || num < INT_MIN || isnan(num))
-		std::cout << "Int: " << std::endl;
+		std::cout << "Int: Impossible" << std::endl;
 	else
 		std::cout << "Int: " << atoi(str.c_str()) << std::endl;
 
