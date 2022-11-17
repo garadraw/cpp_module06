@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 19:28:50 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 19:55:48 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/17 20:13:37 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main()
 	data->s = "Hello";
 
 	std::cout << "Data Addres Before: " << data << std::endl;
-	std::cout << "Before: c: " << data->c << " i: " << data->i << "f: " << data->f << " s: " + data->s << std::endl;
+	std::cout << "Before: c: " << data->c << " i: " << data->i << " f: " << data->f << " s: " + data->s << std::endl;
 
 	std::cout <<std::endl; 
 	std::cout <<std::endl; 
