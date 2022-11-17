@@ -3,15 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:19:47 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 21:51:57 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/17 22:06:17 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "Base.hpp"
-
 
 #include "Base.hpp"
 

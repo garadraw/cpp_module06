@@ -4,7 +4,7 @@ CC = c++
 
 FLAGS = -Werror -Wall -Wextra -std=c++98 -g
 
-SRC = main.cpp Base.cpp
+SRC = main.cpp
 
 RM = rm -f
 
