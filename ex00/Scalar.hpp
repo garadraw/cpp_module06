@@ -6,7 +6,7 @@
 /*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 12:09:48 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 12:11:46 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/17 18:25:56 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 #define SCALAR_HPP
 
 #include <iostream>
+#include <string>
+#include <iomanip>
+#include <cctype>
+
+#include <stdlib.h>
+#include <stdio.h>
 
 
 #endif
