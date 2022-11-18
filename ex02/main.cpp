@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:19:47 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 22:06:17 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/18 14:48:44 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ Base *generate(void)
 
 void identify(Base *p)
 {
+	A* a;
+	B* b;
+	C* c;
+	
 	if (dynamic_cast<A*>(p))
 		std::cout << "Class type A" << std::endl;
 	else if (dynamic_cast<B*>(p))
@@ -44,7 +48,7 @@ void identify(Base &p)
 		temp = dynamic_cast<A&>(p);
 		std::cout << "Class type A" << std::endl;
 	}
-	catch(std::exception &e)
+	catch(std::bad_cast &e)
 	{
 		std::cout << "Exception: " << e.what() << std::endl;
 	}
@@ -54,7 +58,7 @@ void identify(Base &p)
 		temp = dynamic_cast<B&>(p);
 		std::cout << "Class type B" << std::endl;
 	}
-	catch (std::exception &e)
+	catch (std::bad_cast &e)
 	{
 		std::cout << "Exception: " << e.what() << std::endl;
 	}
@@ -64,7 +68,7 @@ void identify(Base &p)
 		temp = dynamic_cast<C&>(p);
 		std::cout << "Class type C" << std::endl;
 	}
-	catch (std::exception &e)
+	catch (std::bad_cast &e)
 	{
 		std::cout << "Exception: " << e.what() << std::endl;
 	}

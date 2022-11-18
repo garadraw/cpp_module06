@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vsimeono <vsimeono@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 12:09:43 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/11/17 19:23:42 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/11/18 14:35:33 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Scalar.hpp"
+
+bool isSpecial(std::string value)
+{
+	return (value == "-inff" || value == "+inff" || value == "nanf" || value == "nan" || value == "-inf" || value == "+inf");
+}
 
 int main(int argc, char **argv)
 {
@@ -19,7 +24,7 @@ int main(int argc, char **argv)
 		std::cout << "Please provide 1 Argument" << std::endl;
 		return (0);
 	}
-	
+
 	std::string str = argv[1];
 	double num = strtod(str.c_str(), NULL);
 
